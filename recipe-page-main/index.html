@@ -62,13 +62,25 @@ p{
   color:  hsl(30, 10%, 34%);
   font-size: 14px;
 }
+@media screen and (max-width: 649px) {
+    img {
+        border-radius: 1em;
+        width: 90%;
+        margin-top: 2em;
+    }
+    .card {
+        width: 50em;
+        margin: 7em;
+    }
+}
   </style>
 </head>
 <body>
-<div style="background-color:  hsl(30, 54%, 90%); display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 0; " >
-  <div style=" background-color: hsl(0, 0%, 100%); border-radius: 17px; width:650px; display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 90px; margin-bottom: 90px;">
-    <div style="width:610px; margin-top: 30px; margin-bottom: 30px; margin-left: 20px; margin-right: 20px; display: flex; flex-direction: column; justify-content:space-around;">
-    <img src="image-omelette.jpeg" alt="omlet img" style="width:100%; border-radius: 17px;">
+  <header></header>
+<main><div class="card" style="background-color:  hsl(30, 54%, 90%); display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 0; " >
+  <div style=" background-color: hsl(0, 0%, 100%); border-radius: 17px; width:650px; display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 70px; margin-bottom: 70px;">
+    <div style="width:610px; margin-top: 25px; margin-bottom: 25px; margin-left: 20px; margin-right: 20px; display: flex; flex-direction: column; justify-content:space-around;">
+   <img src="image-omelette.jpeg" alt="omlet img" style="width:100%; border-radius: 17px;">
 
   <h1 style="font-family:Young Serif;">Simple Omelette Recipe</h1>
 
@@ -76,7 +88,7 @@ p{
   to perfection, optionally filled with your choice of cheese, vegetables, or meats.
 </p>
 <div style="background-color:  hsl(330, 100%, 98%); ">
- <h3 style="color: hsl(332, 51%, 32%); font-family:'Outfit', sans-serif ; padding-left: 25px; font-weight: 400px;"> Preparation time</h3>
+ <p style="color: hsl(332, 51%, 32%); font-family:'Outfit', sans-serif ; font-size: 1.17em; font-style: bold;  padding-left: 25px; font-weight: 700px;"> <strong>Preparation time</strong></p>
   
     <ul ::marker="color:hsl(332, 51%, 32%)" style="padding-left: 40px;">
       <li> <strong>Total</strong>: Approximately 10 minutes</li>
@@ -164,9 +176,11 @@ p{
 </div>
 </div>
 </div>
-  <div class="attribution">
+</main>
+  <footer><div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+</footer>
 </body>
 </html>
